@@ -1,5 +1,8 @@
-Simple password generator is used to generate random password.
+# SIMPLE PASSWORD GENERATOR.
+
+**Simple password generator is used to generate random password.**
+**It Generates safe password**
 
 
-
-We will update this as soon as we receive any issues.
+# Note:
+`We will update this as soon as we receive any issues.`
