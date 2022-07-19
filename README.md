@@ -5,4 +5,5 @@
 
 
 # Note:
-`We will update this as soon as we receive any issues.`
+`We will update as soon as we receive any issues.`
+`Feel free to suggest something.`
