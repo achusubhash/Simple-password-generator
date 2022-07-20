@@ -5,8 +5,9 @@
 **`It Generates safe password.`**
 
 # Instructions.
-**`Download simple_password_generator.exe file and run it`**
+**`Download and run "simple_password_generator.exe" `**
 
+**`You can find your password in password.txt after generating a password`**
 
 # Note:
 `We will update as soon as we receive any issues.`
