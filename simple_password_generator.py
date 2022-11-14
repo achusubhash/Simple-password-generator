@@ -1,35 +1,22 @@
-import numbers
-import random as r
+import random
 import string as s
+import numbers
 
-first = r.choice(s.ascii_letters) + r.choice(s.ascii_letters) +r.choice(s.ascii_letters) + r.choice(s.ascii_letters)
-second = r.choice(s.ascii_letters) + r.choice(s.ascii_letters) + r.choice(s.ascii_letters) + r.choice(s.ascii_letters)
-n = r.randint(1,9)+r.randint(1,9)+r.randint(1,9)+r.randint(1,9)
-m = r.randint(1,9)+r.randint(1,9)+r.randint(1,9)+r.randint(1,9)
-number1 =str(n)
-number2=str(m)
-special_characters = "!","#","$","%","&","*","+","-","/",":",";","<","=",">","?","@","[","]","^","_","{","|","}","~"
-special_Characters = r.choice(special_characters)
+FirstN = random.randint(1, 9)+random.randint(1, 9)
+FrstUsrN = random.choice(s.ascii_letters)+random.choice(s.ascii_letters)+random.choice(s.ascii_letters)+random.choice(s.ascii_letters)
 
-print("Welcome to simple password generator.\n You can generate safe password for any use.\n===Full forms of some words used===\n 1,y/n = yes/no \n 2, S/E = Start/End") 
+SpChartr = random.choice(s.punctuation)
 
-password = (number2+first+special_Characters+second+number2)
+SndUsrN = random.choice(s.ascii_letters)+random.choice(s.ascii_letters)+random.choice(s.ascii_letters)+random.choice(s.ascii_letters)
+LastN = random.randint(1, 9)+random.randint(1, 9)
 
-nickname=input("Do you want to add any nickname (y/n) :")
+FrstN = str(FirstN)
+SndN = str(LastN)
 
-if nickname == 'y': 
-    nickname2=(input("enter nickname :"))
-    print("Your password is : ",nickname2+password)
-    a= nickname2+password
-    b = str(a)
-    File = open("Password.txt","w")
-    File.write(b)
-    File.close()
-    
-else:
-    print("Your Password is :",password)
-    a=password
-    b = str(a)
-    File = open("Password.txt","w")
-    File.write(b)
-    File.close()
+password = (FrstN+FrstUsrN+SpChartr+SndUsrN+SndN)
+print(password)
+
+File = open("Password.txt",'a')
+string=str(password)
+File.write("\n"+ string)
+File.close()
